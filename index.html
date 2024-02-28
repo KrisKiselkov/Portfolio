@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;1000&family=Poppins:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/870d330d1d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <nav>
+        <h3>Kristian.dev</h3>
+        <ul id="nav-links">
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <div id="greet-txt">
+                <h1>Front-End <span id="react">React</span><br> Developer <span><img src="imgaes/memoji.png" id="memoji"></span></h1>
+                <p>Hi there! I am <span id="gr-name">Kristian Kiselkov</span>, a 19 years old <br> Web-Developer from Varna, Bulgaria with a...
+                <br> <span id="gr-i"><i>...<a onclick="topFunction()">passion</a>!</i></span></p>
+            </div> 
+            
+            <div id="per-img"></div>
+            
+        </section>
+            <div id="th-stk">
+                <h2>Tech Stack</h2>
+                <hr class="th">
+                <div id="stk-skills">
+                    <img src="https://skillicons.dev/icons?i=html,css" alt="HTML & CSS">
+                    <img src="https://skillicons.dev/icons?i=js,react" alt="JS & React">    
+                </div>        
+            </div>
+
+        <section id="about">
+            <section id="ab-pa">
+                <div id="left-ap">
+                    <div id="ab-img" class="ap-sect"></div>
+                    
+                    <div class="ap-sect">
+                        <h2 id="pa-h2">Passion</h2>
+                
+                        <p id="pa-tx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> 
+                </div>
+            
+                <div id="right-ap">
+                    <div class="ap-sect">
+                        <h2 id="ab-h2">About Me</h2>
+                
+                        <p id="ab-tx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div id="pa-img" class="ap-sect"></div>
+                </div>
+            </section>
+        </section>
+
+        <section id="projects">
+            <div class="f-project block">
+                <div class="f-t-pro-img" onmouseover="onMouseOverProj()"><div class="desk"><h3 class="deskH">Build with:</h3><p class="deskP">React | Vanilla CSS</p></div></div>
+
+                <h2 class="f-t-h2">Jamming</h2>
+
+                <p class="f-t-p">Jamming is a React Web Application build on the Spotify API that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.</p>
+            </div>
+
+            <!--<div class="s-project block">
+                <h2 id="s-h2">Jamming</h2>
+
+                <p id="s-p">Jamming is a React Web Application build on the Spotify API that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.</p>
+
+                <img src="imgaes/Photo-263.jpg" alt="Jamming Project" id="s-pro-img">
+            </div>
+
+            <div class="t-project block">
+                <img src="imgaes/Photo-263.jpg" alt="Jamming Project" class="f-t-pro-img">
+
+                <h2 class="f-t-h2">Jamming</h2>
+
+                <p class="f-t-p">Jamming is a React Web Application build on the Spotify API that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.</p>
+            </div>-->
+
+        </section>
+
+        <section id="contact">
+            <h2 id="cont-h2">Let's Work Together!<span><img src="imgaes/memoji-2.png" id="memoji-2"></span></h2>
+            
+            <div id="social">
+                <div class="github git-mail" onmouseover="onMouseOverGit()">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+
+                    <a id="a-git" href="https://github.com/KrisKiselkov" target="_blank">@KrisKiselkov</a>
+                </div>
+
+                <div class="email git-mail" onmouseover="onMouseOverMail()">
+                    <i class="fa-regular fa-envelope fa-2xl" style="color: #1644cc;"></i>
+
+                    <a id="a-email" href="mailto:cristian.kiselkov@gmail.com">cristian.kiselkov@gmail.com</a>
+                </div>
+            </div>
+
+            <div id="con-img"></div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
