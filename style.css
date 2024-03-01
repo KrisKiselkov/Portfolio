@@ -115,6 +115,10 @@ main {
     font-weight: bold;
 }
 
+#phone-br {
+    display: none;
+}
+
 #gr-i {
     display: flex;
     justify-content: center;
@@ -249,15 +253,12 @@ main {
 #ab-img {
     background-image: url('imgaes/DSC_5316.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center -4.8em;
     position: relative;
     top: 3em;
     left: 4em;
     width: 25em;
     height: 22em;
-    border-radius: 20px;
-    
     border-radius: 20px;
     transition: all .3s ease;
 }
@@ -274,7 +275,8 @@ main {
 #ab-h2 {
     position: relative;
     top: 1em;
-    margin-left: 6.2em;
+    left: 6.2em;
+    width: 6em;
     color: #1644cc;
     font-size: 30px;
     text-transform: uppercase;
@@ -284,7 +286,6 @@ main {
     position: relative;
     top: 2em;
     width: 80%;
-    margin: 0 auto;
     margin-left: 3.5em;
     text-align: justify;
     font-size: 19px;
@@ -304,7 +305,7 @@ main {
 #pa-h2 {
     position: relative;
     top: 5em;
-    margin-left: 6.2em;
+    left: 6.2em;
     color: #1644cc;
     font-size: 30px;
     text-transform: uppercase; 
@@ -331,7 +332,7 @@ main {
 .block {
     display: flex;
     height: 20em;
-    width: 70%;
+    width: 45em;
     background-color: rgb(231, 231, 231);
     border-radius: 30px;
     box-shadow:  0px 6px 14px 5px rgba(139, 139, 139, 0.527);
@@ -378,10 +379,13 @@ main {
     transition: all .3s;
 }
 
+#f-t {
+    width: 36%;
+}
+
 .f-t-h2 {
-    position: absolute;
-    top: 0;
-    right: 4.2em;
+    position: relative;
+    left: 3.8em;
     color: #1644cc;
     font-size: 27px;
     background: none;
@@ -390,7 +394,7 @@ main {
 .f-t-h2::after {
     content: '';
     display: block;
-    width: 100%;
+    width: 44%;
     height: 3px;
     background: linear-gradient(to left, #1644cc, #61dbfb);
     opacity: 1;
@@ -405,7 +409,7 @@ main {
     content: '';
     display: block;
     position: absolute;
-    width: 100%;
+    width: 44%;
     height: 3px;
     left: 0;
     bottom: 0;
@@ -420,9 +424,7 @@ main {
 
 .f-t-p {
     position: relative;
-    top: 1em;
     left: 1.7em;
-    width: 36%;
     text-align: justify;
     font-size: 22px;
 }
@@ -503,7 +505,7 @@ main {
 .github {
     position: absolute;
     margin-top: 2.3em;
-    margin-left: 9em;
+    left: 9em;
     height: 4.5em;
     width: 4.5em;
     border-radius: 50px;
@@ -537,13 +539,14 @@ main {
 .email {
     position: absolute;
     margin-top: 2.3em;
-    margin-left: 24em;
+    left: 24em;
     height: 4.5em;
     width: 4.5em;
     border-radius: 50px;
     background-color: #fff;
     box-shadow: 0em 0em 1em .25em rgb(139, 139, 139, 0.527);
     transition: all .3s;
+    z-index: 10;
 }
 
 .fa-envelope {
@@ -571,16 +574,330 @@ main {
 #con-img {
     background-image: url(imgaes/phones2.png);
     background-size: contain;
-    width: 41%;
-    height: 135%;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 21em;
     float: right;
     position: relative;
     top: -7.5em;
-    right: 3em;
 }
 
 footer {
     height: 15em;
     background-color: #18181a;
     z-index: 5;
+}
+
+
+
+/* RESPONIVE DESIGN */
+@media screen and (max-width: 1260px) {
+    #ab-img {
+        left: 2em;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    #ab-img {
+        left: 0em;
+    }
+
+    #ab-h2, #pa-h2 {
+        left: 5.7em;
+    }
+
+    #con-img {
+        right: 0em;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #ab-img {
+        left: -3em;
+    }
+
+    #ab-h2, #pa-h2 {
+        left: 5.7em;
+    }
+
+    #greet-txt {
+        padding-right: 0em;
+    }
+
+    #per-img {
+        right: 1em;
+    }
+}
+
+/* LAPTOP */
+@media screen and (max-width: 1024px) {
+    #ab-img {
+        left: -4em;
+    }
+
+    #ab-h2 {
+        left: 6.6em;
+    }
+
+    #ab-tx, #pa-tx {
+        width: 100%;
+    }
+
+    #pa-tx {
+        right: 3em;
+    }
+
+    #pa-h2 {
+        left: 2.8em;
+    }
+
+    #greet-txt {
+        position: relative;
+        left: 1em;
+        top: 2em;
+    }
+
+    #per-img {
+        top: 2em;
+        right: 1em;
+        width: 19em;
+        height: 19em;
+    }
+
+    #home {
+        height: 30em;
+    }
+
+    #cont-h2 {
+        left: 3em;
+    }
+
+    .github {
+        left: 5em;
+    }
+    .email {
+        left: 18em;
+    }
+}
+
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    #nav-links {
+        display: none;
+    }
+
+
+    /*MAIN*/
+    #home { 
+        display: block;
+        height: 34em;
+    }   
+
+    #per-img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1em;
+        margin: 0 auto;
+        width: 16.5em;
+        height: 16.5em;
+    }
+
+    #greet-txt {
+        position: relative;
+        width: fit-content;
+        top: 21.2em;
+        margin: 0 auto;
+    }
+
+    #greet-txt h1 {
+        position: relative;
+        right: .4em;
+        font-size: 42px;
+        text-align: center;
+        
+    }
+
+    #memoji {
+        height: 1.3em;
+    }
+
+    #greet-txt p {
+        position: relative;
+        font-size: 18px;
+        top: 1em;
+        right: .6em;
+    }
+
+    #th-stk {
+        top: .8em;
+    }
+
+    #th-stk h2 {
+        bottom: -6px;
+    }
+
+    #stk-skills img {
+        top: -8px;
+    }
+
+    .th {
+        width: 15%;
+    }
+
+
+    /*ABOUT*/
+    #about  {
+        height: 102em;
+    }
+
+    #ab-pa {
+        display: block;
+        top: 2em;
+        width: 100%;
+    }
+
+    #left-ap::before {
+        display: none;
+    }
+
+    #left-ap {
+        width: 100%;
+    }
+
+    #right-ap {
+        width: 100%;
+    }
+
+    #ab-img {
+        left: 0em;
+        width: 24em;
+        height: 21em;
+        background-position: center -4.8em;
+        margin: 0 auto;
+    }
+
+    #ab-img:hover {
+    background-position: center -4.8em;
+    }
+
+    .ab {
+        position: relative;
+        top: -15em;
+        padding-bottom: 7em;
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 4px dashed #1644cc;
+    }
+
+    #ab-h2 {
+        left: 9.5em;
+        font-size: 25px;
+    }
+    
+    #ab-tx {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .ap-sect:hover {
+        transform: none;
+    }
+
+    #pa-img {
+        position: relative;
+        top: -11em;
+        background-image: url('imgaes/idea.png');
+        background-size: cover;
+        margin: 0 auto;
+        left: 0em;
+        width: 24em;
+        height: 21em;
+    }
+
+    .pa {
+        position: relative;
+        top: 47em;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #pa-h2 {
+        position: relative;
+        left: 10em;
+        font-size: 25px;
+        width: 5em;
+    }
+
+    #pa-tx{
+        top: 7.5em;
+        margin: 0 auto;
+        right: 0;
+        width: 70%;
+    }
+
+
+    /*PROJECTS*/
+    #projects {
+        height: 60em;        
+    }
+
+    .block {
+        display: block;
+        width: 27em;
+        height: 34.6em;
+    }
+
+    .f-t-pro-img {
+        top: 1em;
+        left: 1em;
+    }
+
+    .desk {
+        top: 14.5em;
+    }
+
+    #f-t {
+        position: relative;
+        top: .8em;
+        width: 90%;
+    }
+
+    .f-t-h2 {
+        left: 5.7em;
+    }
+
+    .f-t-h2::before {
+        width: 29%;
+    }
+
+    .f-t-h2::after {
+        width: 29%;
+    }
+
+    .f-t-p {
+        left: 1em;
+    }
+
+
+    /*CONTACT*/
+    #contact {
+        height: 20em;
+    }
+
+    #con-img {
+        width: 45%;
+    }
+
+    .github {
+        margin-top: 0;
+    }
+
+    .email {
+        margin-top: 7em;
+        left: 5em;
+    }
 }
