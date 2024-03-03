@@ -6,7 +6,7 @@ function topFunction() {
 function onMouseOverGit() {
     const git = document.querySelector('.github');
     const aGit = document.getElementById('a-git');
-
+     
     const mouseOver = () => {
         git.style.width='12.5em';
         const p = () => {
@@ -25,6 +25,14 @@ function onMouseOverGit() {
 
     git.addEventListener('mouseover', mouseOver);
     git.addEventListener('mouseout', mouseOut)
+}
+
+function gitFunc() {
+    if (window.outerWidth > 375) {
+      onMouseOverGit();
+    } else {
+      console.log("Screen width is too small to execute the function");
+    }
 }
 
 
@@ -52,6 +60,15 @@ function onMouseOverMail() {
     email.addEventListener('mouseout', mouseOut);
 }
 
+function mailFunc() {
+    if (window.outerWidth > 375) {
+      onMouseOverMail();
+    } else {
+      console.log("Screen width is too small to execute the function");
+    }
+}
+
+
 function onMouseOverProj() {
     const proj = document.querySelector('.f-t-pro-img');
     const h = document.querySelector('.deskH');
@@ -76,3 +93,4 @@ function onMouseOverProj() {
     proj.addEventListener('mouseout', mouseOut);
 }
 
+  

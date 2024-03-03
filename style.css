@@ -211,7 +211,7 @@ main {
     top: 1em;
 }
 
-
+/*ABOUT*/
 #about {
     background-color: #f5f5f5;
     height: 68em;
@@ -324,7 +324,6 @@ main {
 /*PROJECTS*/
 #projects {
     height: 40em;
-    width: 80%;
     margin: 0 auto;
     
 }
@@ -379,7 +378,7 @@ main {
     transition: all .3s;
 }
 
-#f-t {
+.f-t {
     width: 36%;
 }
 
@@ -474,6 +473,8 @@ main {
     top: 20em;
 }
 
+
+/*CONTACT*/
 #contact {
     height: 15em;
     background-color: rgb(245, 245, 245);
@@ -522,6 +523,13 @@ main {
     color: #1644cc;
 }
 
+#github-h3 {
+    display: none;
+    position: relative;
+    top: 1.5em;
+    font-weight: 800;
+}
+
 #a-git {
     display: none;
     position: relative;
@@ -530,6 +538,7 @@ main {
     color: #18181a;
     font-weight: 800;
     text-decoration: none;
+    transition: color .3s;
 }
 
 #a-git:hover {
@@ -554,6 +563,14 @@ main {
     top: .85em;
     left: .6em;
     scale: 1.3;
+}
+
+#mail-h3 {
+    display: none;
+    width: 4em;
+    position: relative;
+    top: 1.5em;
+    font-weight: 800;
 }
 
 #a-email {
@@ -860,7 +877,7 @@ footer {
         top: 14.5em;
     }
 
-    #f-t {
+    .f-t {
         position: relative;
         top: .8em;
         width: 90%;
@@ -901,3 +918,256 @@ footer {
         left: 5em;
     }
 }
+
+
+/*PHONE*/
+@media screen and (max-width: 375px) {
+
+    /*MAIN*/    
+    #greet-txt h1 {
+        font-size: 38px;
+    }
+
+    #greet-txt p {
+        font-size: 18px;
+        width: 19em;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #base-br {
+        display: none;
+    }
+
+    #phone-br {
+        display: block;
+    }
+
+    #th-stk h2 {
+        font-size: 22px;
+    } 
+
+    .th {
+        width: 28%;
+    }
+
+    #stk-skills img {
+        width: 6em;
+    }
+
+    #stk-skills img:hover {
+        top: 2px;
+    }
+
+
+    /*ABOUT*/
+    #about {
+        height: 100em;
+    }
+
+    #ab-img {
+        width: 19em;
+        height: 17em;
+        background-position: center -3.6em;
+    }
+
+    .ab {
+        top: -20.7em;
+        padding-bottom: 4.5em;
+    }
+
+    #ab-h2 {
+        left: 4em;
+        font-size: 22px;
+    }
+
+    #ab-tx {
+        width: 95%;
+        top: 1em;
+    }
+
+    .pa {
+        top: 46em;
+    }
+
+    #pa-img {
+        width: 19em;
+        height: 17em;
+        top: -18em;
+    }
+
+    #pa-h2 {
+        left: 4.5em;
+        font-size: 22px;
+    }
+
+    #pa-tx {
+        top: 6em;
+        width: 95%;
+    }
+
+
+    /*PROJECTS*/
+    #projects {
+        height: 43em;
+    }
+
+    .block {
+        width: 19em;
+        height: 32em;
+    }
+
+    .f-project {
+        top: 5em;
+    }
+
+    .f-t-pro-img {
+        width: 17em;
+        height: 14em;
+    }
+
+    .desk {
+        top: 10em;
+    }
+
+    .f-t {
+        width: 15em;
+    }
+
+    .f-t-h2 {
+        left: 3.5em;
+        bottom: 5px;
+    }
+
+    .f-t-h2::before {
+        width: 47%;
+    }
+
+    .f-t-h2::after {
+        width: 47%;
+    }
+
+    .f-t-p {
+        left: 17px;
+        bottom: .8em;
+        width: 12.2em;
+    }
+
+
+    /*CONTACT*/ 
+    #contact {
+        height: 23em;
+    }
+
+    #con-img {
+        display: none;
+    }
+
+    #cont-h2 {
+        font-size: 23px;
+        left: 2em;
+        width: 13em;
+    }
+
+    #memoji-2 {
+        height: 50px;
+    }
+
+    #social {
+        position: relative;
+        bottom: .7em;
+    }
+
+    .github {
+        height: 3.5em;
+        width: 3.5em;
+        left: 10em;
+    }
+
+    .fa-github {
+        scale: 1.2;
+        top: 18.5px;
+        left: 12.5px;
+    }
+
+    #github-h3 {
+        display: block;
+    }
+
+    #a-git {
+        display: block;
+        top: 1.2em;
+        left: -1.5em;
+        color: #1644cc;
+    }
+
+    .email {
+        height: 3.5em;
+        width: 3.5em;
+        margin-top: 9em;
+        left: 10em;
+    }
+
+    .fa-envelope {
+        scale: 1.1;
+        top: 18px;
+        left: 12px;
+    }
+
+    #mail-h3 {
+        display: block;
+    }
+
+    #a-email {
+        display: block;
+        top: 1.2em;
+        left: -5em;
+        color: #1644cc;
+    }
+}
+
+/*
+
+
+
+#a-git:hover {
+    color: #1644cc;
+}
+
+.email {
+    position: absolute;
+    margin-top: 2.3em;
+    left: 24em;
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0em 0em 1em .25em rgb(139, 139, 139, 0.527);
+    transition: all .3s;
+    z-index: 10;
+}
+
+.fa-envelope {
+    position: relative;
+    top: .85em;
+    left: .6em;
+    scale: 1.3;
+}
+
+
+
+#a-email:hover {
+    color: #1644cc;
+}
+
+#con-img {
+    background-image: url(imgaes/phones2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 21em;
+    float: right;
+    position: relative;
+    top: -7.5em;
+}
+*/
