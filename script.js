@@ -93,4 +93,21 @@ function onMouseOverProj() {
     proj.addEventListener('mouseout', mouseOut);
 }
 
+function navClick() {
+    const ham = document.getElementById('hamburger');
+    const info = document.getElementById('mobile-nav');
+    const links = document.getElementById('mobile-nav-links'); 
+
+    ham.addEventListener('click', () => {
+        ham.classList.toggle('is-active');
+        info.classList.toggle('is-active-info');
+        
+    })
+
+    links.addEventListener('click', () => {
+        ham.classList.toggle('is-active');
+        info.classList.toggle('is-active-info');
+    })
+}
+
   
