@@ -28,7 +28,7 @@ function onMouseOverGit() {
 }
 
 function gitFunc() {
-    if (window.outerWidth > 375) {
+    if (window.outerWidth > 768) {
       onMouseOverGit();
     } else {
       console.log("Screen width is too small to execute the function");
@@ -61,7 +61,7 @@ function onMouseOverMail() {
 }
 
 function mailFunc() {
-    if (window.outerWidth > 375) {
+    if (window.outerWidth > 768) {
       onMouseOverMail();
     } else {
       console.log("Screen width is too small to execute the function");
