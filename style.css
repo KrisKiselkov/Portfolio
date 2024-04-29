@@ -299,11 +299,19 @@ main {
 #me {
     display: flex;
     position: relative;
-    left: 7em;
-    width: 55%;
+    margin: 0 auto;
+    width: 56em;
     height: 350px;
     border-bottom: 100px solid #1644cc;
     border-radius: 30px;
+}
+
+#me-img {
+    background-image: url('imgaes/me.png');
+    width: 300px;
+    height: 430px;
+    background-size: cover;
+    
 }
 
 .pa-me-img img {
@@ -314,13 +322,13 @@ main {
 
 #me-txt {
     position: relative;
-    top: 2em;
+    top: 4em;
 }
 
 #ab-h2 {
     position: relative;
     top: 1.3em;
-    left: 3.8em;
+    margin: 0 auto;
     width: 6em;
     color: #1644cc;
     font-size: 30px;
@@ -330,8 +338,9 @@ main {
 #ab-tx {
     position: relative;
     top: 2em;
+    line-height: 30px;
     width: 80%;
-    left: 1.5em;
+    left: 2.5em;
     text-align: justify;
     font-size: 19px;
 }
@@ -341,18 +350,22 @@ main {
     display: flex;
     position: relative;
     top: 8em;
-    right: 7em;
-    width: 55%;
+    margin: 0 auto;
+    width: 56em;
     height: 300px;
     border-bottom: 100px solid #1644cc;
     border-radius: 30px;
-    float: right;
+}
+
+#pa-txt {
+    position: relative;
+    top: 2em;
 }
 
 #pa-h2 {
     position: relative;
     top: .8em;
-    left: 4.2em;
+    margin: 0 auto;
     width: 6em;
     color: #1644cc;
     font-size: 30px;
@@ -363,7 +376,8 @@ main {
     position: relative;
     top: 1em;
     width: 80%;
-    left: 1.5em;
+    left: 2.5em;
+    line-height: 30px;
     text-align: justify;
     font-size: 19px;
 }
@@ -656,21 +670,7 @@ footer {
 
 
 /* RESPONIVE DESIGN */
-@media screen and (max-width: 1260px) {
-    #ab-img {
-        left: 2em;
-    }
-}
-
 @media screen and (max-width: 1160px) {
-    #ab-img {
-        left: 0em;
-    }
-
-    #ab-h2, #pa-h2 {
-        left: 5.7em;
-    }
-
     #con-img {
         right: 0em;
         background-repeat: no-repeat;
@@ -678,14 +678,6 @@ footer {
 }
 
 @media screen and (max-width: 1060px) {
-    #ab-img {
-        left: -3em;
-    }
-
-    #ab-h2, #pa-h2 {
-        left: 5.7em;
-    }
-
     #greet-txt {
         padding-right: 0em;
     }
@@ -697,34 +689,6 @@ footer {
 
 /* LAPTOP */
 @media screen and (max-width: 1024px) {
-    #ab-img {
-        left: -4em;
-    }
-
-    #ab-h2 {
-        left: 6.6em;
-    }
-
-    #ab-tx, #pa-tx {
-        width: 100%;
-    }
-
-    #ab-tx {
-        left: 4em;
-    }
-
-    #pa-tx {
-        left: -3.5em;
-    }
-
-    #pa-h2 {
-        left: 2.3em;
-    }
-
-    #pa-img {
-        left: 4em;
-    }
-
     #greet-txt {
         position: relative;
         left: 1em;
@@ -742,6 +706,18 @@ footer {
         height: 30em;
     }
 
+    #me, #pa {
+        width: 50em;
+    }
+
+    #me-txt {
+        top: 2.5em;
+    }
+
+    #pa-txt {
+        top: .5em;
+    }
+
     #cont-h2 {
         left: 3em;
     }
@@ -751,6 +727,12 @@ footer {
     }
     .email {
         left: 18em;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    #me, #pa {
+        width: 46em;
     }
 }
 
@@ -780,7 +762,7 @@ footer {
         position: absolute;
         left: 0;
         right: 0;
-        top: 1em;
+        top: 1.4em;
         margin: 0 auto;
         width: 16.5em;
         height: 16.5em;
@@ -831,97 +813,57 @@ footer {
 
     /*ABOUT*/
     #about  {
-        height: 96em;
+        height: 89em;
     }
 
-    #ab-pa {
+    #me {
         display: block;
-        top: 2em;
-        width: 100%;
-    }
-
-    #left-ap::before {
-        display: none;
-    }
-
-    #left-ap {
-        width: 100%;
-    }
-
-    #right-ap {
-        width: 100%;
-    }
-
-    #ab-img {
-        left: 0em;
-        width: 24em;
-        height: 21em;
-        background-position: center -4.8em;
-        margin: 0 auto;
-    }
-
-    #ab-img:hover {
-    background-position: center -4.8em;
-    }
-
-    .ab {
+        border: none;
         position: relative;
-        top: -15.5em;
-        padding-bottom: 7em;
-        width: 80%;
-        margin: 0 auto;
-        border-bottom: 4px dashed #1644cc;
+        top: 4em;
     }
 
-    #ab-h2 {
-        left: 9.5em;
-        top: 2em;
-        font-size: 25px;
+    #me-img {
+        background-image: url('imgaes/DSC_5316.jpg');
+        width: 300px;
+        height: 400px;
+        background-size: cover;
+        border-radius: 20px;
+        position: relative;
+        left: 27.5%;
+    }
+    
+    #me-txt {
+        top: -.6em;
     }
     
     #ab-tx {
+        left: 3.7em;
+        text-align: center;
+    }
+    
+    #pa {
+        display: block;
+        border: none;
         position: relative;
-        width: 75%;
-        margin: 0 auto;
-        left: 0em;
+        top: 22em;
     }
-
-    .ap-sect:hover {
-        transform: none;
-    }
-
-    #pa-img {
+    
+    .pa-me-img {
+        width: 300px;   
         position: relative;
-        top: -11em;
-        background-image: url('imgaes/idea.png');
-        background-size: cover;
-        margin: 0 auto;
-        left: 0em;
-        width: 24em;
-        height: 21em;
+        top: 5em;
+        left: 26.5%;
     }
 
-    .pa {
-        position: relative;
-        top: 42em;
-        width: 80%;
-        margin: 0 auto;
+    #pa-txt {
+        top: 3.2em;
     }
 
-    #pa-h2 {
-        position: relative;
-        left: 10em;
-        top: 6em;
-        font-size: 25px;
-        width: 5em;
-    }
-
-    #pa-tx{
-        top: 7.5em;
-        margin: 0 auto;
-        right: 0;
-        left: 0em;
-        width: 75%;
+    #pa-tx {
+        text-align: center;
+        left: 3em;
+        top: 1.3em;
     }
 
 
@@ -933,7 +875,7 @@ footer {
     .block {
         display: block;
         width: 27em;
-        height: 34.6em;
+        height: 33em;
     }
 
     .f-t-pro-img {
@@ -953,6 +895,7 @@ footer {
 
     .f-t-h2 {
         left: 5.7em;
+        top: -10px;
     }
 
     .f-t-h2::before {
@@ -964,7 +907,9 @@ footer {
     }
 
     .f-t-p {
-        left: 1em;
+        left: .9em;
+        top: -22px;
+        text-align: center;
     }
 
 
@@ -1034,6 +979,10 @@ footer {
         display: block;
     }
 
+    #th-stk {
+        height: 14em;
+    }
+
     #th-stk h2 {
         font-size: 22px;
     } 
@@ -1042,7 +991,15 @@ footer {
         width: 28%;
     }
 
+    #stk-skills {
+        width: 300px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 20px 40px;
+    }
+
     #stk-skills img {
+        
         width: 6em;
     }
 
@@ -1053,50 +1010,61 @@ footer {
 
     /*ABOUT*/
     #about {
-        height: 100em;
+        height: 95em;
     }
 
-    #ab-img {
-        width: 19em;
-        height: 17em;
-        background-position: center -3.6em;
+    #me {
+        width: fit-content;
     }
 
-    .ab {
-        top: -22em;
-        padding-bottom: 5.5em;
+    #me-img {
+        position: relative;
+        left: 4.9em;
+        width: 16em;
+        height: 19em;
+        background-position: center;
+    }
+
+    #me-txt {
+        margin: 0 auto;
+        border-bottom: 3px dashed #1644cc;
+        padding-bottom: 2.5em;
+        width: 90%;
     }
 
     #ab-h2 {
-        left: 4em;
-        top: 1.3em;
-        font-size: 22px;
+        font-size: 24px;
+        left: .9em;
     }
 
     #ab-tx {
-        width: 95%;
-        top: 1em;
+        top: 1.2em;
+        left: 1em;
+        width: 90%;
     }
 
-    .pa {
-        top: 44em;
+    #pa {
+        width: fit-content;
+        top: 21.5em;
     }
 
-    #pa-img {
-        width: 19em;
-        height: 17em;
-        top: -18.7em;
+    .pa-me-img {
+        position: relative;
+        left: 3em;
+        width: 16em;
+        height: 18.5em;
     }
 
     #pa-h2 {
-        left: 4.5em;
-        top: 5.5em;
-        font-size: 22px;
+        font-size: 24px;
+        left: 1em;
+        top: 5.2em;
     }
 
     #pa-tx {
-        top: 6em;
-        width: 95%;
+        top: 6.2em;
+        left: 2em;
+        width: 80%;
     }
 
 
@@ -1107,7 +1075,7 @@ footer {
 
     .block {
         width: 19em;
-        height: 30em;
+        height: 28.5em;
     }
 
     .f-project {
@@ -1141,11 +1109,11 @@ footer {
     }
 
     .f-t-p {
-        left: 45px;
+        left: 38px;
         bottom: .8em;
-        width: 12.2em;
+        width: 13.5em;
         font-size: 17px;
-        
+        text-align: justify;
     }
 
 

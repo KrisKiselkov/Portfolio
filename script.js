@@ -110,4 +110,9 @@ function navClick() {
     })
 }
 
-  
+function changeImg() {
+    const meImg = document.getElementById('me-img');
+    if (window.outerWidth > 768) {
+        meImg.im
+    } 
+}
